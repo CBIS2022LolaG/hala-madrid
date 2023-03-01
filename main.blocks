@@ -1,0 +1,19 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="padUnY5@wNk]Y.gk5smG">light level</variable></variables><block type="device_button_event" id="(W2l8MC:7FrwtP3IpId0" x="0" y="0"><field name="NAME">Button.A</field><statement name="HANDLER"><block type="device_set_tempo" id="4yLNBv^+BuHr*5NPPKl@"><value name="value"><shadow type="math_number_minmax" id="[}:n~tDePb8,Oaea}Cai"><mutation min="4" max="400" label="Bpm" precision="0"></mutation><field name="SLIDER">120</field></shadow></value><next><block type="controls_repeat_ext" id="-*0p}CN!?FLmrWku/o.l"><value name="TIMES"><shadow type="math_whole_number" id="p-$e*`h2WSs!t`+?MOM-"><field name="NUM">20</field></shadow></value><statement name="DO"><block type="device_rest" id="1sb$U//dvW2F@=LcvSy;"><value name="duration"><shadow type="device_beat" id="SFrbWO;H{sIl%GsjR`[r"><field name="fraction">BeatFraction.Quarter</field></shadow></value><next><block type="controls_if" id="gKNPttt,peJO0$O*C/0y"><mutation else="1"></mutation><value name="IF0"><shadow type="logic_boolean" disabled="true"><field name="BOOL">TRUE</field></shadow><block type="logic_compare" id="[o,`~Uo?*Bg$*9Ta`b@E"><field name="OP">LT</field><value name="A"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="device_get_light_level" id="~}@72v#0%%hE8_Up%?zE"></block></value><value name="B"><shadow type="math_number" id="e$b*,FFS{%hVE%EcP2tJ"><field name="NUM">80</field></shadow></value></block></value><statement name="DO0"><block type="device_play_note" id="=8MT.[,P%*Xgc$vaPww#"><value name="note"><shadow type="device_note" id="0;_q4*GIY}1dBXXelT%?"><field name="name">131</field></shadow></value><value name="duration"><shadow type="device_beat" id="p--E*9kr8i7;[{%;z7WW"><field name="fraction">BeatFraction.Half</field></shadow></value><next><block type="device_show_leds" id="Yqx%#O=M2E5e2tEc=3):"><field name="LEDS">`
+        # . . . # 
+        . # . # . 
+        . . . . . 
+        . # . # . 
+        . . # . .
+        `</field></block></next></block></statement><statement name="ELSE"><block type="controls_if" id="pM~~G8^~VuYDe0q!W7:c"><mutation else="1"></mutation><value name="IF0"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="logic_compare" id="LX(fiPQ(D6#5X7XkI*wG"><field name="OP">LT</field><value name="A"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="device_get_light_level" id="jj$xA;W#:0k=eS/[~Au?"></block></value><value name="B"><shadow type="math_number" id="_.0Bit0Q;UbNmG8tbvh="><field name="NUM">160</field></shadow></value></block></value><statement name="DO0"><block type="device_play_note" id="zirrEr`Dfr*Nj3Nb@L1u"><value name="note"><shadow type="device_note" id="op7j@6Iql-JiM)e)_h:e"><field name="name">220</field></shadow></value><value name="duration"><shadow type="device_beat" id="+!BmLAeB!0ojXYV:{E}B"><field name="fraction">BeatFraction.Half</field></shadow></value><next><block type="device_show_leds" id="M2eJSX_|uDQDqS1`wKuI"><field name="LEDS">`
+        # . . . # 
+        . # . # . 
+        . . # . . 
+        . # . # . 
+        # . . . #
+        `</field></block></next></block></statement><statement name="ELSE"><block type="device_play_note" id="xoFW6QQx6Q`!t-X,.!=."><value name="note"><shadow type="device_note" id="N;zwA3yM;Qd[JfP=)qMU"><field name="name">698</field></shadow></value><value name="duration"><shadow type="device_beat" id="]%=M#pj]^H%xyHp_XRyq"><field name="fraction">BeatFraction.Half</field></shadow></value><next><block type="device_show_leds" id="Zoj$l`]IdVlt?4kf4Es."><field name="LEDS">`
+        . # . # . 
+        . # . # . 
+        . . # . . 
+        # . . . # 
+        . # # # .
+        `</field></block></next></block></statement></block></statement></block></next></block></statement></block></next></block></statement></block></xml>
